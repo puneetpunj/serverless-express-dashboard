@@ -1,0 +1,71 @@
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 30px 0;
+  background: #EEE;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+th {
+  text-align: center;
+}
+
+th:first-child {
+  text-align: left;
+}
+
+td:first-child {
+  text-align: left;
+}
+
+td {
+  text-align: center;
+}
+
+.banners {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.banners img {
+  /* -webkit-box-flex: 1;
+  -moz-box-flex: 1; */
+  /* width: 20%; */
+  /* height: 100px; */
+  width: 200px;
+  height: 100px;
+  /* -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; */
+}
+
+.scrm {
+  display: block;
+  margin: 20px 20px;
+}
+
+span.Passed, span.passed {
+  background: green;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+span.Failed, span.failed {
+  background: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}

@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  h1="JETSTAR - TEST AUTOMATION EXECUTION DASHBOARD"
+  table(class="table table-bordered table-bordered table-striped table-hover")
+    thead
+      tr
+        //- th="S.No"
+        th="Execution Date"
+        th="Total Tests"
+        th="Passed"
+        th="Failed"
+        th="Pending"
+        th="Duration (seconds)"
+        th="Status"
+        th="View Results"        
+    each value, index in tests
+      tr
+       td=value.date
+       td=value.totalTests
+       td=value.passedTests
+       td=value.failedTests
+       td=value.pendingTests
+       td=value.duration/1000
+       td(class="status " + value.status)
+        span(class=value.status)=value.status
+       td
+        a(href=value.s3File.replace('.json','.html'), target="_blank") Test Report
+
