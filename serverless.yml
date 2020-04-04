@@ -1,6 +1,6 @@
 plugins:
   - serverless-offline
-service: sample-app
+service: serverless-reporting-dashboard
 provider:
   name: aws
   runtime: nodejs12.x
