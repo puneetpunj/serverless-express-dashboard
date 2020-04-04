@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  h1="JETSTAR - TEST AUTOMATION EXECUTION DASHBOARD"
+  h1="TEST AUTOMATION EXECUTION DASHBOARD"
   table(class="table table-bordered table-bordered table-striped table-hover")
     thead
       tr
@@ -26,4 +26,3 @@ block content
         span(class=value.status)=value.status
        td
         a(href=value.s3File.replace('.json','.html'), target="_blank") Test Report
-
