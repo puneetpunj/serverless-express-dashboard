@@ -1,15 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
-const {
-  getTests,
-  getTestResultHtml
-} = require('../lib/core');
+const { getReports, getTestResultHtml } = require('../lib/core');
 const moment = require('moment');
 
 router.get('/dashboard', async function (req, res, next) {
 
-  const tests = (await getTests()).map(t => {
+  const tests = (await getReports()).map(t => {
     t.date = moment(t.date).format('DD/MMM/YYYY hh:mm:ss a');
     return t;
   });
