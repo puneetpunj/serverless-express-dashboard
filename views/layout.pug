@@ -3,13 +3,8 @@ html
   head
     title= title
     link(rel='shortcut icon', href='/images/favicon.ico', type='image/png')
-    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
-    link(rel='stylesheet', href='/stylesheets/scrm.css')
+    link(rel='stylesheet', href='./stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='./stylesheets/app.css')
   body
-    div(class="banners")
-      img(src="/images/jetstar-logo.gif", class="banner")
-      img(src="/images/aws.png", class="banner")
-      //- img(src="/images/serverless1.png", class="banner")
-      img(src="/images/node-js.png", class="banner")
-    div(class="scrm")
+    div(class="app")
       block content
